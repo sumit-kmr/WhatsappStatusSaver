@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <VideoView
+            android:id="@+id/preview_video_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
+        <ImageView
+            android:id="@+id/preview_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/preview_status_image"
+            android:maxWidth="350dp"
+            android:maxHeight="500dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/preview_download_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="@string/download_image"
+                android:focusable="true"
+                android:padding="4dp"
+                android:src="@drawable/download" />
+            <ImageView
+                android:id="@+id/preview_delete_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="@string/delete_image"
+                android:padding="4dp"
+                android:src="@drawable/delete"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/preview_play_pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/preview_share_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="@string/share_image"
+                android:focusable="true"
+                android:padding="4dp"
+                android:src="@drawable/share" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

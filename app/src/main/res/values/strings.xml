@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Whatsapp Status Saver</string>
+    <string name="ask_permission_1">Please grant storage permissions so that we can download statuses to your device</string>
+    <string name="allow">Allow</string>
+    <string name="no_status_available">No status available</string>
+    <string name="preview_status_image">preview_status_image</string>
+    <string name="download_image">download_image</string>
+    <string name="share_image">share_image</string>
+    <string name="downloads">Downloads</string>
+    <string name="no_downloads">No downloads</string>
+    <string name="delete_image">delete_image</string>
+</resources>
